@@ -61,15 +61,21 @@ class GameController extends GetxController {
 
     for (int i = 1; i <= 20; i++) {
 
+      int start = rand.nextInt(50) + 10;
+      int target = rand.nextInt(50) + 10;
+
+
       towersAData["tower$i"] = {
         "id": "tower$i",
-        "startValue": rand.nextInt(400) + 100,
+        "startValue": start,
+        "targetValue": target,
         "state": "available"
       };
 
       towersBData["tower$i"] = {
         "id": "tower$i",
-        "startValue": rand.nextInt(400) + 100,
+        "startValue": start,
+        "targetValue": target,
         "state": "available"
       };
     }
@@ -326,6 +332,47 @@ class GameController extends GetxController {
       );
     }
   }
+
+
+  void checkAFK(String uid) async {
+
+  final snapshot = await FirebaseDatabase.instance
+      .ref("players/$uid/lastSeenAt")
+      .get();
+
+  if (!snapshot.exists) return;
+
+  int lastSeen = snapshot.value as int;
+
+  int now = DateTime.now().millisecondsSinceEpoch;
+
+  if (now - lastSeen > 30000) {
+
+    print("Player AFK");
+
+  }
+
+}
+
+   void openPuzzle(int start, int target) {
+
+    Get.dialog(
+      AlertDialog(
+        title: Text("Solve Tower"),
+        content: Text("Start: $start, Target: $target"),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Get.back();
+            },
+            child: const Text("OK"),
+          )
+        ],
+      ),
+    );
+   }
+
+  
 
   /// =========================
   /// CLEANUP

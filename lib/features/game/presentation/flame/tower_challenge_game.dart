@@ -16,12 +16,13 @@ class TowerChallengeGame extends FlameGame with TapCallbacks {
 
       final tower = TowerComponent(
         startValue: 10,
+        targetValue: 30,
         state: "available",
       );
 
       tower.position = Vector2(
-        (i % 5) * 80,
-        (i ~/ 5) * 80,
+        (i % 5) * 90 + 20,
+        (i ~/ 5) * 90 + 20,
       );
 
       add(tower);
