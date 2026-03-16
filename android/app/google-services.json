@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "247621092702",
+    "firebase_url": "https://flutter-connect-c2016-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "flutter-connect-c2016",
+    "storage_bucket": "flutter-connect-c2016.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247621092702:android:6bbcc513dd7eb83cd63bcf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_chat_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMV6MLhAeqVIJ_-jurskJmCoQa9iUgNRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247621092702:android:548a8c7d95356e7ed63bcf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMV6MLhAeqVIJ_-jurskJmCoQa9iUgNRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
