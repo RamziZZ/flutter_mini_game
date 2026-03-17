@@ -217,12 +217,6 @@ Beberapa fitur yang dapat dikembangkan lebih lanjut:
 
 ---
 
-## 👨‍💻 Author
-
-Ramzi Farhan
-Student – Informatics Engineering
-Politeknik Negeri Jember (PSDKU Nganjuk)
-
 ---
 
 ## 📄 License
